@@ -1,0 +1,15 @@
+p {
+    font-family: Lato;
+}
+
+div {
+border: 5px black solid;
+text-align: center;
+width: 200px;
+}
+
+input{
+display:inline-block;
+width:25px;
+}
+  

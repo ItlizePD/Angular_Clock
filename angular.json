@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Clock"
+  "defaultProject": "Clock",
+  "cli": {
+    "analytics": false
+  }
 }
