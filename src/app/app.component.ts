@@ -40,15 +40,11 @@ export class AppComponent implements OnInit, OnDestroy {
     this.isChange = true;
   }
 
-  changeHour(event:any) {
-    this.hour = event.target.value;
+  changeHour() {
   }
-    changeMinute(event:any) {
-    this.minute = event.target.value;
+  changeMinute() {
   }
-
-    changeSecond(event:any) {
-    this.second = event.target.value;
+  changeSecond() {
   }
 
   resume(event:any){

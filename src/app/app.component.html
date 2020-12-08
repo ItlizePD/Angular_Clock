@@ -3,9 +3,9 @@
 	
 	<p (click)="changeTime($event)" [style.display]="isShow?'block':'none'"><span>{{ hour }}</span>:<span>{{ minute }}</span>:<span>{{ second}}</span> {{ampm}}</p>
   <p [style.display]="isChange?'inline':'none'" >
-    <input text="input" value={{hour}} (change)="changeHour($event)"/>:
-    <input text="input" value={{minute}} (change)="changeMinute($event)"/>:
-    <input text="input" value={{second}} (change)="changeSecond($event)"/>
+    <input text="input" [(ngModel)]="hour" (change)="changeHour()"/>:
+    <input text="input" [(ngModel)]="minute" (change)="changeMinute()"/>:
+    <input text="input" [(ngModel)]="second" (change)="changeSecond()"/>
     {{ampm}}
     <button (click)="resume($event)">Resume</button>
   </p>
