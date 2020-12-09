@@ -14,7 +14,6 @@ export class AppComponent implements OnInit, OnDestroy {
   ampm:any;
   timer:any;
   isShow = true;
-  isChange = false;
 
   ngOnInit() {
     this.timer = setInterval(() => {
@@ -37,19 +36,10 @@ export class AppComponent implements OnInit, OnDestroy {
   changeTime(event:any){
     clearInterval(this.timer);
     this.isShow = false;
-    this.isChange = true;
-  }
-
-  changeHour() {
-  }
-  changeMinute() {
-  }
-  changeSecond() {
   }
 
   resume(event:any){
     this.isShow = true;
-    this.isChange = false;
     this.timer = setInterval(() => {
       let newtime = parseInt(this.second)+1;
       this.time = new Date(0,0,0,this.hour,this.minute,newtime);

@@ -2,10 +2,10 @@
 	<p>London clock</p>
 	
 	<p (click)="changeTime($event)" [style.display]="isShow?'block':'none'"><span>{{ hour }}</span>:<span>{{ minute }}</span>:<span>{{ second}}</span> {{ampm}}</p>
-  <p [style.display]="isChange?'inline':'none'" >
-    <input text="input" [(ngModel)]="hour" (change)="changeHour()"/>:
-    <input text="input" [(ngModel)]="minute" (change)="changeMinute()"/>:
-    <input text="input" [(ngModel)]="second" (change)="changeSecond()"/>
+  <p [style.display]="isShow?'none':'inline'" >
+    <input text="input" [(ngModel)]="hour" />:
+    <input text="input" [(ngModel)]="minute" />:
+    <input text="input" [(ngModel)]="second" />
     {{ampm}}
     <button (click)="resume($event)">Resume</button>
   </p>
